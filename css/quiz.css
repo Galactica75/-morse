@@ -112,7 +112,7 @@ body { background-color: #fff; padding: 20px; }
    width: 550px;
    position: absolute;
    top: 225px;
-   left: 40px;
+   left: 1350px;
 }
 
 #myQuiz .question .txt{
@@ -197,7 +197,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .results{
    position: absolute;
    top: 225px;
-   left:40px;
+   left:1350px;
    widtH: 550px;
 }
 
