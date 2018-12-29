@@ -5,7 +5,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz {
    font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
    width: 650px; 
-   height: 650px;
+   height: 750px;
    position: relative;
    overflow: hidden;
    margin: 0 auto;
@@ -53,8 +53,8 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .progress div{
    position: relative;
    display: inline-block;
-   width:15px;
-   height: 15px;
+   width:12px;
+   height: 12px;
    margin-right: 10px;
    border-radius: 50%;
    background-color: rgba(77, 77, 77, 0.2);
@@ -71,7 +71,7 @@ body { background-color: #fff; padding: 20px; }
    height: 40px;
    background: url(../images/ring.svg) no-repeat 0px 0px;
    transition: opacity 1s, top 1s;
-   background-size: 45%;
+   background-size: 40%;
    opacity: 0;
 }
 
@@ -129,6 +129,7 @@ body { background-color: #fff; padding: 20px; }
    padding: 10px;
    margin: 0 15px 15px 0;
    position: relative;
+   min-height: 60px;
 }
 
 #myQuiz .question .ans.selected{
@@ -163,11 +164,18 @@ body { background-color: #fff; padding: 20px; }
 }
 
 #myQuiz .question.unanswered .ans:hover{
-   background-color:  rgba(238,189,102,0.1)
+   box-shadow:inset 0px 0px 85px rgba(238,189,102,0.1);
 }
 
 #myQuiz .question.answered .ans{
    cursor: default;
+}
+
+#myQuiz .question .ans.image{
+   min-height: 60px;
+   padding:0px;
+   background-repeat: no-repeat;
+   background-position: 0px 0px;
 }
 
 /* Feedback */
@@ -184,7 +192,7 @@ body { background-color: #fff; padding: 20px; }
    margin-top: 5px;
 }
 #myQuiz .feedback strong{
-   color: #fff;
+   color: #459a2e;
 }
 
 #myQuiz .answered .feedback{
@@ -233,4 +241,60 @@ body { background-color: #fff; padding: 20px; }
 
 #myQuiz .intro.inactive, #myQuiz.inactive.answered{
    left: 1350px;
+}
+.clipwrapper        { position: relative; height: 48px; width: 48px; }
+
+.a{
+   position: absolute;
+   top: -182px;
+   left: -106px;
+   clip: rect(212px 170px 230px 121px);
+}
+.b{
+   position: absolute;
+   top: -232px;
+   left: -100px;
+   clip: rect(257px 190px 276px 115px);
+}
+.c{
+   position: absolute;
+   top: -276px;
+   left: -100px;
+   clip: rect(296px 190px 318px 115px);
+}
+.d{
+   position: absolute;
+   top: -312px;
+   left: -106px;
+   clip: rect(332px 178px 352px 115px);
+}
+.e{
+   position: absolute;
+   top: -345px;
+   left: -112px;
+   clip: rect(367px 139px 385px 121px);
+}
+.f{
+   position: absolute;
+   top: -381px;
+   left: -112px;
+   clip: rect(401px 192px 420px 121px);
+}
+.g{
+   position: absolute;
+   top: -418px;
+   left: -115px;
+   clip: rect(438px 187px 457px 124px);
+}
+.h{
+   position: absolute;
+   top: -451px;
+   left: -113px;
+   clip: rect(471px 193px 491px 122px);
+}
+.i{
+   position: absolute;
+   top: -486px;
+   left: -114px;
+   clip: rect(506px 160px 527px 123px);
 }
